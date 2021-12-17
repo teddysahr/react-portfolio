@@ -1,9 +1,21 @@
-import React from 'react';
+import React from "react";
 
-export default function Blog() {
+export default function Portfolio() {
+  // const styles = {
+  //   header: {
+  //     display: "flex",
+  //     justifyContent: "space-between",
+  //     alignItems: "center",
+  //     flexWrap: "wrap",
+  //     padding: "2rem",
+  //     background: "#FF0001",
+  //     fontSize: "50px",
+  //   },
+  // };
+
   return (
     <div>
-      <h1>Blog Page</h1>
+      <h1>portfolio</h1>
       <p>
         Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
         Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
