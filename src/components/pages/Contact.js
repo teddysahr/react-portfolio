@@ -1,22 +1,52 @@
 import React from "react";
 
 export default function Contact() {
+  const styles = {
+    page: {
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      marginTop: "100px",
+    },
+    aboutme: {
+      width: "50%",
+    },
+    forms: {
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      gap: "7px",
+    },
+  };
   return (
-    <div>
-      <h1>contact</h1>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-      </p>
+    <div style={styles.page}>
+      <div class="window" style={styles.aboutme}>
+        <div class="title-bar">
+          <div class="title-bar-text">Contact</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+          </div>
+        </div>
+        <div style={styles.forms} class="window-body">
+          <div class="field-row">
+            <label for="text17">Name:</label>
+            <input id="text17" type="text" />
+          </div>
+          <div class="field-row">
+            <label for="text17">Email:&nbsp; </label>
+            <input id="text17" type="text" />
+          </div>
+          <div class="field-row">
+            <label for="text17">Msg:&nbsp; &nbsp;</label>
+            <input id="text17" type="text" />
+          </div>
+          <form>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
     </div>
   );
 }

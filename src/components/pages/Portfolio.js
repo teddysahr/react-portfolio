@@ -24,7 +24,7 @@ export default function Portfolio() {
     <div style={styles.page}>
       <div class="window" style={styles.aboutme}>
         <div class="title-bar">
-          <div class="title-bar-text">some projects i've done</div>
+          <div class="title-bar-text">Some Projects I've Done</div>
           <div class="title-bar-controls">
             <button aria-label="Minimize"></button>
             <button aria-label="Maximize"></button>

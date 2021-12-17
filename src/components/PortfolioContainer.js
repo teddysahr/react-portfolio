@@ -69,7 +69,7 @@ export default function PortfolioContainer() {
       <div className="window">
         <header className="title-bar">
           <div style={styles.title} className="title-bar-text">
-            teddy sahr
+            Teddy Sahr
           </div>
 
           <div className="title-bar-controls">
