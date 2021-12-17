@@ -6,6 +6,7 @@ function NavTabs({ currentPage, handlePageChange }) {
   const styles = {
     tabs: {
       color: "#FFFFFF",
+      fontSize: "16px",
     },
   };
 

@@ -25,7 +25,7 @@ export default function PortfolioContainer() {
     //   },
 
     title: {
-      fontSize: "16px",
+      fontSize: "27px",
       textAlign: "center",
     },
 
@@ -33,12 +33,17 @@ export default function PortfolioContainer() {
       position: "absolute",
       // left: 0,
       bottom: 0,
-      // display: "flex",
-      // flexDirection: "column",
-      // justifyContent: "flex-end",
+      display: "flex",
+
+      justifyContent: "center",
       width: "100%",
       textAlign: "center",
-      padding: "1rem",
+      padding: "5px",
+    },
+
+    footercontent: {
+      fontSize: "16px",
+      color: "#FFFFFF",
     },
   };
 
@@ -79,7 +84,7 @@ export default function PortfolioContainer() {
       </div>
       <div>{renderPage()}</div>
       <footer className="title-bar" style={styles.footer}>
-        <h1>footer</h1>
+        <h1 style={styles.footercontent}>1993©</h1>
       </footer>
     </div>
   );

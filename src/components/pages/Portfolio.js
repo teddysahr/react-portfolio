@@ -1,36 +1,61 @@
 import React from "react";
 
 export default function Portfolio() {
-  // const styles = {
-  //   header: {
-  //     display: "flex",
-  //     justifyContent: "space-between",
-  //     alignItems: "center",
-  //     flexWrap: "wrap",
-  //     padding: "2rem",
-  //     background: "#FF0001",
-  //     fontSize: "50px",
-  //   },
-  // };
-
+  const styles = {
+    page: {
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      marginTop: "100px",
+    },
+    aboutme: {
+      width: "50%",
+    },
+    btns: {
+      color: "white",
+      display: "flex",
+      gap: "10px",
+      justifyContent: "center",
+      flexDirection: "column",
+      alignItems: "center",
+    },
+  };
   return (
-    <div>
-      <h1>portfolio</h1>
-      <p>
-        Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
-        Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
-        dictum. Ut vel ante eget massa ornare placerat. Etiam nisl orci, finibus
-        sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum nunc,
-        sed pretium risus rutrum eget. Nam consequat, ligula in faucibus
-        vestibulum, nisi justo laoreet risus, luctus luctus mi lacus sit amet
-        libero. Class aptent taciti sociosqu ad litora torquent per conubia
-        nostra, per inceptos himenaeos. Mauris pretium condimentum tellus eget
-        lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-        Donec placerat accumsan mi, ut congue neque placerat eu. Donec nec ipsum
-        in velit pellentesque vehicula sit amet at augue. Maecenas aliquam
-        bibendum congue. Pellentesque semper, lectus non ullamcorper iaculis,
-        est ligula suscipit velit, sed bibendum turpis dui in sapien.
-      </p>
+    <div style={styles.page}>
+      <div class="window" style={styles.aboutme}>
+        <div class="title-bar">
+          <div class="title-bar-text">some projects i've done</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+          </div>
+        </div>
+        <div style={styles.btns} class="window-body">
+          <form
+            action="https://teddysahr.github.io/project-1/"
+            method="get"
+            target="_blank"
+          >
+            <button type="submit">Moodvie</button>
+          </form>
+
+          <form
+            action="https://teddysahr.github.io/hw5-day-planner/"
+            method="get"
+            target="_blank"
+          >
+            <button type="submit">Day Planner</button>
+          </form>
+          <form
+            action="https://teddysahr.github.io/hw3-password-generator-repo/"
+            method="get"
+            target="_blank"
+          >
+            <button type="submit">Password Generator</button>
+          </form>
+        </div>
+      </div>
     </div>
   );
 }
