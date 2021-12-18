@@ -6,7 +6,7 @@ import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
 
 export default function PortfolioContainer() {
-  const [currentPage, setCurrentPage] = useState("Home");
+  const [currentPage, setCurrentPage] = useState("About");
 
   const styles = {
     //   header: {
@@ -38,7 +38,7 @@ export default function PortfolioContainer() {
       justifyContent: "center",
       width: "100%",
       textAlign: "center",
-      padding: "5px",
+      padding: "3px",
     },
 
     footercontent: {
@@ -65,9 +65,9 @@ export default function PortfolioContainer() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div>
-      <div className="window">
-        <header className="title-bar">
+    <div id="background">
+      <div>
+        <header id="head">
           <div style={styles.title} className="title-bar-text">
             Teddy Sahr
           </div>
@@ -82,8 +82,42 @@ export default function PortfolioContainer() {
           </div>
         </header>
       </div>
-      <div>{renderPage()}</div>
-      <footer className="title-bar" style={styles.footer}>
+      <div id="desktop">
+        <div id="icons">
+          <img
+            class="image"
+            src="https://win98icons.alexmeub.com/icons/png/computer_explorer_cool-5.png"
+            alt="Planner"
+          />
+          <p>Computer</p>
+          <img
+            class="image"
+            src="https://win98icons.alexmeub.com/icons/png/cd_drive-5.png"
+            alt="Planner"
+          />
+          <p>CD Drive</p>
+          <img
+            class="image"
+            src="https://win98icons.alexmeub.com/icons/png/directory_closed_cool-2.png"
+            alt="Planner"
+          />
+          <p>Documents</p>
+          <img
+            class="image"
+            src="https://win98icons.alexmeub.com/icons/png/recycle_bin_empty-2.png"
+            alt="Planner"
+          />
+          <p>Recycle Bin</p>
+          <img
+            class="image"
+            src="https://win98icons.alexmeub.com/icons/png/windows_three.png"
+            alt="Planner"
+          />
+          <p>Add/Remove Programs</p>
+        </div>
+        <div id="content">{renderPage()}</div>
+      </div>
+      <footer class="window" id="foot" style={styles.footer}>
         <h1 style={styles.footercontent}>1993©</h1>
       </footer>
     </div>

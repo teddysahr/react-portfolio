@@ -9,7 +9,7 @@ export default function Resume() {
       marginTop: "50px",
     },
     aboutme: {
-      width: "500px",
+      width: "60%",
     },
   };
   return (

@@ -9,7 +9,7 @@ export default function About() {
       marginTop: "100px",
     },
     aboutme: {
-      width: "90%",
+      width: "60%",
     },
   };
   return (
@@ -25,20 +25,15 @@ export default function About() {
         </div>
         <div class="window-body">
           <p>
-            Donec a volutpat quam. Curabitur nec varius justo, sed rutrum
-            ligula. Curabitur pellentesque turpis sit amet eros iaculis, a
-            mollis arcu dictum. Ut vel ante eget massa ornare placerat. Etiam
-            nisl orci, finibus sodales volutpat et, hendrerit ut dolor.
-            Suspendisse porta dictum nunc, sed pretium risus rutrum eget. Nam
-            consequat, ligula in faucibus vestibulum, nisi justo laoreet risus,
-            luctus luctus mi lacus sit amet libero. Class aptent taciti sociosqu
-            ad litora torquent per conubia nostra, per inceptos himenaeos.
-            Mauris pretium condimentum tellus eget lobortis. Interdum et
-            malesuada fames ac ante ipsum primis in faucibus. Donec placerat
-            accumsan mi, ut congue neque placerat eu. Donec nec ipsum in velit
-            pellentesque vehicula sit amet at augue. Maecenas aliquam bibendum
-            congue. Pellentesque semper, lectus non ullamcorper iaculis, est
-            ligula suscipit velit, sed bibendum turpis dui in sapien.
+            I'm Teddy Sahr and I'm a New York based front-end web developer.
+            After graduating from The Fashion Institute of Technology with a BS
+            in Film, I decided to switch gears during the pandemic and went on
+            to receive a full stack coding certificate from Columbia
+            University's School of Engineering. As an artist, I never saw myself
+            in the "tech world." But here we are... I'm just trying to bring my
+            sensibilities to the craft in any way that I can and along the way
+            I've been gaining a sort of romantic appreciaiton for computers,
+            programing, code etc.
           </p>
         </div>
       </div>
